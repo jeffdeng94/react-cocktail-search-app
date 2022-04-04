@@ -1,0 +1,15 @@
+/* 
+====== 
+Error page
+======
+*/
+.error-page {
+  display: flex;
+  justify-content: center;
+
+  //error-page-container
+  &-container {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}

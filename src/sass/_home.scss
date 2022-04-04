@@ -1,0 +1,123 @@
+/* 
+====== 
+Form
+======
+*/
+.search {
+  margin-top: 1rem;
+  padding-bottom: 0;
+
+  //search-form
+  &-form {
+    width: $smallWidth;
+    margin: 0 auto;
+    max-width: $maxWidth;
+    background: $mainWhite;
+    padding: 2rem 2.5rem;
+    text-transform: capitalize;
+    border-radius: $mainBorderRadius;
+    box-shadow: $lightShadow;
+
+    //search-form-control label
+    &-control label {
+      display: block;
+      margin-bottom: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      color: $primaryColor;
+    }
+
+    //search-form-control label input
+    &-control input {
+      width: 100%;
+      border: none;
+      border-color: transparent;
+      background: $mainBackground;
+      border-radius: $mainBorderRadius;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* 
+====== 
+Cocktails List 
+======
+*/
+
+.section {
+  padding: 5rem 0;
+
+  &-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: $mainSpacing;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.cocktails-center {
+  width: $smallWidth;
+  margin: 0 auto;
+  max-width: $fullWidth;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  /* align-items: start; */
+}
+
+@media screen and (min-width: 576px) {
+  .cocktails-center {
+    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+}
+
+/* 
+====== 
+Cocktail 
+======
+*/
+
+.cocktail {
+  background: $mainWhite;
+  margin-bottom: 2rem;
+  box-shadow: $lightShadow;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: $mainBorderRadius;
+  @include mainTransition();
+
+  &:hover {
+    box-shadow: $darkShadow;
+  }
+
+  //cocktail img
+  & img {
+    height: 20rem;
+    object-fit: cover;
+    border-top-left-radius: $mainBorderRadius;
+    border-top-right-radius: $mainBorderRadius;
+  }
+
+  //cocktail footer
+  &-footer {
+    padding: 1.5rem;
+
+    & h3 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    & h4 {
+      margin-bottom: 0.3rem;
+    }
+
+    & p {
+      color: $darkGrey;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* 
+====== 
+Navbar
+======
+*/
+.nav {
+  background: $mainWhite;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $primaryColor;
+  box-shadow: $lightShadow;
+
+  //nav-center
+  &-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $smallWidth;
+    margin: 0 auto;
+    max-width: $fullWidth;
+  }
+
+  //nav-links
+  &-links {
+    display: flex;
+    align-items: center;
+
+    & a {
+      text-transform: capitalize;
+      display: inline-block;
+      font-weight: bold;
+      margin-right: 0.5rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      padding: 0.25rem 0.5rem;
+      @include mainTransition();
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 12rem;
+}

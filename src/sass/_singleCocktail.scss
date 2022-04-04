@@ -1,0 +1,54 @@
+/* 
+====== 
+singleCocktail
+======
+*/
+
+.cocktail-section {
+  text-align: center;
+}
+.drink {
+  width: $smallWidth;
+  max-width: $fullWidth;
+  margin: 0 auto;
+  text-align: left;
+
+  & img {
+    border-radius: $mainBorderRadius;
+  }
+
+  & p {
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.8;
+  }
+
+  & span {
+    margin-right: 0.5rem;
+  }
+
+  &-data {
+    background: $primaryLightColor;
+    padding: 0.25rem 0.5rem;
+    border-radius: $mainBorderRadius;
+    color: $primaryColor;
+  }
+
+  &-info {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .drink {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+    align-items: center;
+
+    //drink-info
+    &-info {
+      padding-top: 0;
+    }
+  }
+}
