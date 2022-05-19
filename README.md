@@ -1,12 +1,12 @@
 # Search Your Favorite Cocktail
 
-A movie web-app for dynamically retrieved cocktails list [Live Link](https://jeffdeng-project-cocktail.netlify.app/)
+A web-app for dynamically retrieved cocktails list [Live Link](https://jeffdeng-project-cocktail.netlify.app/)
 
 ## Description
 
 This app is built with React.
 
-The purpose of this project is to practice and enhance my front-end development skills, especially React and its related tech such as React Router.
+The purpose of this project is to practice and enhance my front-end development skills, especially React framework such as React Router.
 
 ## Relevant Techs
 
@@ -32,4 +32,4 @@ The purpose of this project is to practice and enhance my front-end development 
 
 ## Challenges
 
-- The most difficult part is the dynamic search feature which is achieved by dynamically update search term which then triggers the useEffect hook to call cocktailDB API
+- The most difficult part is the dynamic search feature which is achieved by dynamically updating search term, which will trigger the useEffect hook to call the cocktailDB API
